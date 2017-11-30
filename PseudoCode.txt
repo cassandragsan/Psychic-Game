@@ -1,0 +1,18 @@
+PseudoCode:
+
+Attempting to do the Psychic Game
+
+- PreWork: create repositories in GitHub and clone them to your local computer
+- Create directories and files as instructed using GitBash: COMPLETED
+- Select a theme for the game: HipHop Greats; guess the names of my favorite rappers in the image on the DOM: COMPLETED
+- Picked image from online source:http://static1.squarespace.com/static/520ed800e4b0229123208764/520ed801e4b0229123208769/5261729ae4b05d134b3889c8/1492609585513/HipHop.jpg?format=1000w
+- Create an array of available characters that a user could enter: COMPLETED
+- Add headers with the appropriate text for the DOM
+- Make Wins, Losses, Guesses Left, Your Guesses so far variables with an incremental value of 0 to start
+- give JavaScript a function to execute when a user enters a character
+- when a character is typed, add it to the the Your Guesses So Far line > let it print in the DOM, do not refresh it
+- decrement the Guesses Left by 1 for every letter that is selected but is not included in the name of the var alphabetName array
+- when the user selects the right letter, print the letter on the screen
+- move through the length of the letters in the array
+- the length will decrement as the user types the letters that are included in the array
+- if the user runs out of the Guesses left, start game over with all values set back to 0 and number of guesses set to 10

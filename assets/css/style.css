@@ -1,0 +1,20 @@
+div{
+	
+	font-family: 'Spectral SC', serif;
+	/*font-family: 'Rozha One', serif;*/
+	/*font-family: Georgia, "Times New Roman", Times, serif*/
+	font-size: .4em;
+	font-weight: 100;
+	/*width:20em;*/
+}
+
+body{
+	background-image: "http://static1.squarespace.com/static/520ed800e4b0229123208764/520ed801e4b0229123208769/5261729ae4b05d134b3889c8/1492609585513/HipHop.jpg?format=1000w";
+}
+
+    #wordWrap{
+        display: inline-block;
+        width: 830px;
+        margin: 0 auto;
+        padding: 10px;
+    }

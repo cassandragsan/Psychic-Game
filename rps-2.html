@@ -2,46 +2,17 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Cassandra's Hip Hop Hangman Game</title>
+  <title>Rock Paper Scissors Part 2
+  </title>
 </head>
 <body>
   <div id="game">
   </div>
-
-      <div class="container">
-      <div class="row">
-        <div class="col-md-offset-2 col-md-8">
-          <div class="jumbotron">
-            <h2>Hip Hop Greats Hangman</h2>
-            <h3>Guess which artist in this image is my favorite? <span id="user-text"> </span></h3>
-
-            <img src="http://static1.squarespace.com/static/520ed800e4b0229123208764/520ed801e4b0229123208769/5261729ae4b05d134b3889c8/1492609585513/HipHop.jpg?format=1000w" class="auth-image" alt="HTML5">
-            
-            <h4>Wins:</h4>
-            <h4>Losses:</h4>
-            <h4>Guesses Left:</h4>
-            <h4>Your Guesses so far: </h4>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
   <script type="text/javascript">
     // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
-   // var computerChoices = ["r", "p", "s"];
-   var alphabetName = ["t", "u", "p","a","c"," ","s","h","a","k","u","r"];
-
-   var array.length = alphabet.length;
- 
-      var userText = document.getElementById("user-text");
-      // Next, we give JavaScript a function to execute when onkeyup event fires.
-      document.onkeyup = function(event) {
-        userText.textContent = event.key;
-
-
-     document.onkeyup = function(event) {
+    var computerChoices = ["r", "p", "s"];
+    // This function is run whenever the user presses a key.
+    document.onkeyup = function(event) {
       // Determines which key was pressed.
       var userGuess = event.key.toLowerCase();
       // Randomly chooses a choice from the options array. This is the Computer's guess.
@@ -50,6 +21,19 @@
       alert("User guess: " + userGuess);
       // Alerts the Computer's guess.
       alert("Computer guess: " + computerGuess);
+
+
+      if (userGuess === "r") {
+        if (computerGuess === "r"){
+          alert("ITS A TIE!!")
+        }
+        if (computerGuess === "p"){
+          alert("COMPUTER WINS")
+        }
+        if (computerGuess === "s"){
+          alert("USER WINS")
+        }
+      } 
 
 
       if (userGuess === "p") {
