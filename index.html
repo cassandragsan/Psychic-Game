@@ -3,79 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <title>Cassandra's Hip Hop Hangman Game</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
 </head>
 <body>
-  <div id="game">
-  </div>
 
       <div class="container">
       <div class="row">
         <div class="col-md-offset-2 col-md-8">
           <div class="jumbotron">
-            <h2>Hip Hop Greats Hangman</h2>
-            <h3>Guess which artist in this image is my favorite? <span id="user-text"> </span></h3>
-
-            <img src="http://static1.squarespace.com/static/520ed800e4b0229123208764/520ed801e4b0229123208769/5261729ae4b05d134b3889c8/1492609585513/HipHop.jpg?format=1000w" class="auth-image" alt="HTML5">
             
-            <h4>Wins:</h4>
-            <h4>Losses:</h4>
-            <h4>Guesses Left:</h4>
-            <h4>Your Guesses so far: </h4>
+            <h1>Psychic Game</h1>
+            <h3>Guess what letter I'm thinking of?</h3>             
+
+<br>
+           
+           <h4>Wins: 0<span id=wins></span></h4> 
+           <h4>Losses: 0<span id=losses></span></h4>
+           <h4>Guesses Left: 10<span id=guessesLeft></span></h4> 
+           <h4>Your Guesses so far: h,j,u,y,t,r,e<span id="user-text"></span></h4>      
+
+            
+                        
+
+            <script type="text/javascript">
+              // Let's start by grabbing a reference to the <span> below.
+              var wins = 0;
+              var losses = 0;
+              var guessesLeft = 0;
+              
+              var userText = document.getElementById("user-text");
+              // Next, we give JavaScript a function to execute when onkeyup event fires.
+              document.onkeyup = function(event) {
+                userText.textContent = event.key;
+              };
+            </script>
+                
+      
+         
+
+
           </div>
         </div>
       </div>
     </div>
 
 
-
-  <script type="text/javascript">
-    // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
-   // var computerChoices = ["r", "p", "s"];
-   var alphabetName = ["t", "u", "p","a","c"," ","s","h","a","k","u","r"];
-
-   var array.length = alphabet.length;
- 
-      var userText = document.getElementById("user-text");
-      // Next, we give JavaScript a function to execute when onkeyup event fires.
-      document.onkeyup = function(event) {
-        userText.textContent = event.key;
-
-
-     document.onkeyup = function(event) {
-      // Determines which key was pressed.
-      var userGuess = event.key.toLowerCase();
-      // Randomly chooses a choice from the options array. This is the Computer's guess.
-      var computerGuess = (computerChoices[Math.floor(Math.random() * computerChoices.length)]).toLowerCase();
-      // Alerts the key the user pressed (userGuess).
-      alert("User guess: " + userGuess);
-      // Alerts the Computer's guess.
-      alert("Computer guess: " + computerGuess);
-
-
-      if (userGuess === "p") {
-        if (computerGuess === "r") {
-          alert("USER WINS");
-        }
-        if (computerGuess === "p") {
-          alert("ITS A TIE!!");
-        }
-        if (computerGuess === "s") {
-          alert("COMPUTER WINS");
-        }
-      } 
-
-      if (userGuess === "s") {
-        if (computerGuess === "r") {
-          alert("COMPUTER WINS!!");
-        }
-        if (computerGuess === "p") {
-          alert("USER WINS");
-        }
-        if (computerGuess === "s") {
-          alert("ITS A TIE");
-        }
-      } 
-    }
 
     </script>
   </body>
