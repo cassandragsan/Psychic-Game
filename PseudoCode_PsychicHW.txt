@@ -1,0 +1,12 @@
+Pseudo Code:
+
+Create variables for Wins, Losses, Your Guesses so far, and Guesses left
+These should be updateable so that:
+1) when a person enters the right letter, it increases the wins by 1
+2) when the person enters a letter, it is recorded at the header "Your Guesses So Far"
+3) if a person does not pick the proper letter in 10 guesses, the Losses header is increased by 1 and Guesses
+left is decreased by 1
+
+if var guesses = var answer then increase wins by 1
+onkeyup print the letter in the your guesses so far header
+if var guesses <> var answer and guesses left = 0 then losses increased by 1
